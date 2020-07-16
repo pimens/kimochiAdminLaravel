@@ -48,12 +48,11 @@ Route::get('/makanan/getNewTrx','ApiApps@getNewTrx');
 Route::get('/makanan/getTrxByCabang/{id}','ApiApps@getTrxByCabang');
 Route::get('/makanan/finish/{id}/{status}','ApiApps@finish');
 
-
+//auth
 Route::Post('/makanan/login/','ApiWeb@login');
-
+//dash
 Route::get('/makanan/getMakanan/','ApiWeb@index');
 Route::get('/makanan/pemasukan/','ApiWeb@pemasukan');
-
 Route::delete('/makanan/deleteMakanan/{id}','ApiWeb@deleteMakanan');
 Route::get('/makanan/getMakananById/{id}','ApiWeb@getMakananById');
 Route::Post('/makanan/editMakanan/','ApiWeb@editMakanan');
@@ -63,6 +62,7 @@ Route::get('/makanan/getCabang/','ApiWebCabang@index');
 Route::delete('/makanan/deleteCabang/{id}','ApiWebCabang@deleteCabang');
 Route::get('/makanan/getCabangById/{id}','ApiWebCabang@getCabangById');
 Route::Post('/makanan/editCabang/','ApiWebCabang@editCabang');
+//kalau pake pacth image ubah base64
 Route::Post('/makanan/insertCabang/','ApiWebCabang@insertCabang');
 
 
